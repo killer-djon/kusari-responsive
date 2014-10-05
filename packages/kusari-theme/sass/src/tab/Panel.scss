@@ -1,0 +1,109 @@
+@include extjs-tab-panel-ui(
+    $ui: 'navigation',
+    $ui-tab-background-color: transparent,
+    $ui-tab-background-color-over: transparent,
+    $ui-tab-background-color-active: transparent,
+    $ui-tab-color: #fff,
+    $ui-tab-color-over: #fff,
+    $ui-tab-color-active: #fff,
+    $ui-tab-glyph-color: #fff,
+    $ui-tab-glyph-color-over: #fff,
+    $ui-tab-glyph-color-active: #fff,
+    $ui-tab-glyph-opacity: 1,
+    $ui-tab-border-radius: 0,
+    $ui-tab-border-width: 0,
+    $ui-tab-inner-border-width: 0,
+    $ui-tab-padding: 15px 20px,
+    $ui-tab-margin: 0,
+    $ui-tab-font-size: 15px,
+    $ui-tab-font-size-over: 15px,
+    $ui-tab-font-size-active: 15px,
+    $ui-tab-line-height: 15px,
+    $ui-tab-font-weight: 600,
+    $ui-tab-font-weight-over: 600,
+    $ui-tab-font-weight-active: 600,
+    $ui-tab-icon-width: 24px,
+    $ui-tab-icon-height: 24px,
+    $ui-tab-icon-spacing: 10px,
+    $ui-bar-background-color: $exec-dark-background,
+    $ui-bar-background-gradient: 'none',
+    $ui-bar-padding: 0,
+    $ui-strip-height: 0
+);
+
+@include extjs-panel-ui(
+    $ui: 'navigation',
+    $ui-header-color: #fff,
+    $ui-header-glyph-color: #fff,
+    $ui-header-glyph-opacity: 1,
+    $ui-header-font-size: 32px,
+    $ui-header-line-height: 32px,
+    $ui-header-font-weight: 600,
+    $ui-header-icon-height: 32px,
+    $ui-header-icon-width: 32px,
+    $ui-header-icon-spacing: 16px,
+    $ui-header-background-color: #f1495b,
+    $ui-header-padding: 0,
+    $ui-header-text-margin: 15px 36px,
+    $ui-header-noborder-adjust: false
+);
+
+.x-tab-navigation {
+    // TODO: add opacity support to extjs-tab-panel-ui mixin
+    @include opacity(0.5);
+
+    // Important added here to overcome background-color:transparent added by framing in IE8
+    // TODO: can we remove the !important rule from the framework?
+    &.x-tab-over {
+        background-color: mix(#000, $exec-dark-background, 10%) !important;
+        @include opacity(0.8);
+    }
+
+    &.x-tab-active {
+        background-color: mix(#000, $exec-dark-background, 20%) !important;
+        @include opacity(1);
+    }
+
+    &.x-tab-pressed {
+        background-color: mix(#000, $exec-dark-background, 20%) !important;
+        @include opacity(1);
+    }
+}
+
+.x-tab-navigation {
+    // TODO: add opacity support to extjs-tab-panel-ui mixin
+    @include opacity(0.5);
+
+    // Important added here to overcome background-color:transparent added by framing in IE8
+    // TODO: can we remove the !important rule from the framework?
+    &.x-tab-over {
+        background-color: mix(#000, $exec-dark-background, 10%) !important;
+        @include opacity(0.8);
+    }
+
+    &.x-tab-active {
+        background-color: mix(#000, $exec-dark-background, 20%) !important;
+        @include opacity(1);
+    }
+
+    &.x-tab-pressed {
+        background-color: mix(#000, $exec-dark-background, 20%) !important;
+        @include opacity(1);
+    }
+}
+
+.x-tab-inner-navigation {
+    white-space: normal;
+
+    .x-ie8 & {
+        font-size: 13px;
+    }
+}
+
+.x-panel-header-title-navigation {
+    text-align: left;
+}
+
+.exec-header-icon, .x-tab-icon-el-navigation {
+    background-size: contain;
+}

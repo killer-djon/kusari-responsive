@@ -1,0 +1,106 @@
+
+.kusari-menu-navigation {
+
+	border: none !important;
+	
+	&.dark-menu{
+		background-color: #3e4752 !important;
+		
+		&:hover{
+			background-color: #313841 !important;
+		}
+	}
+    // MENU DISCLOSURE
+	.x-menu-item-separator{
+		background: none !important;
+	}
+	
+    .x-menu {
+        border: none;
+    }
+
+    .x-css-shadow {
+        -webkit-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+        -moz-box-shadow:    0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+        box-shadow:         0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+    }
+
+    .x-tool-img {
+        background-color: transparent !important;
+        left: 30%;
+        width: 32px;
+        height: 32px;
+        position: relative;
+        top: 30%;
+    }
+
+    .x-tool-gear {
+        background-image: theme-background-image('icons/menu-disclosure', 'png') !important;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center center !important;
+        @include opacity(0.5);
+    }
+
+    &.x-ie8 .x-tool-gear {
+        background-image: theme-background-image('icons/menu-disclosure-small', 'png') !important;
+    }
+
+    .x-tool {
+        background-color: $exec-dark-background;
+    }
+
+    .x-tool:hover {
+        .x-tool-gear {
+            @include opacity(1);
+        }
+        background-color: darken($exec-dark-background, 10%) !important;
+    }
+
+    // MENU
+
+    .x-menu-body {
+        background-color: $exec-dark-background;
+        span {
+            color: white;
+            font-weight: $exec-font-semibold;
+            @include opacity(0.5);
+        }
+        a {
+            line-height: 50px;
+        }
+        
+        & .x-menu-item-arrow{
+	        top: 17px !important;
+        }
+    }
+
+    .x-menu-item-icon {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        top: 20%;
+        left: 10px;
+        @include opacity(0.5);
+        background-size: 70%;
+    }
+    
+    .x-menu-item-glyph{
+	    color: white !important;
+    }
+
+    .x-menu-item-text {
+        margin-left: 65px;
+        margin-right: 25px;
+    }
+
+    .x-menu-item-active {
+        background-color: darken($exec-dark-background, 10%) !important;
+        span {
+            @include opacity(1);
+        }
+        .x-menu-item-icon {
+            @include opacity(1);
+        }
+    }
+}
