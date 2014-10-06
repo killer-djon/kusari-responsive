@@ -7,7 +7,7 @@ Ext.define("Kusari.view.widgets.machines.MachinesView", {
 		'Kusari.view.widgets.machines.MachinesController',
 		'Kusari.view.widgets.machines.MachinesViewModel',
 		
-		'Kusari.view.widgets.machines.protected.ProtectedView'
+		'Kusari.view.widgets.machines.protect.ProtectedView'	
 	],
 	
 	controller: 'machinescontroller',

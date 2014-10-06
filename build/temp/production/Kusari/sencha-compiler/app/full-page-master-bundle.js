@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /Users/djon/Sites/kusari-test/app.js
+// @require /Volumes/RAID0/djon/Sites/kusari-test/app.js

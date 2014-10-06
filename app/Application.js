@@ -25,7 +25,7 @@ Ext.define('Kusari.Application', {
 		
 		// widgets views
 		'widgets.taskmonitor.TaskMonitorView',
-		'widgets.machines.MachinesView'
+		'widgets.machines.MachinesView',
 	],
 
 	models: [
