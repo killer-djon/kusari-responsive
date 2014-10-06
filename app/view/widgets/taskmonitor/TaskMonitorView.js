@@ -18,7 +18,6 @@ Ext.define("Kusari.view.widgets.taskmonitor.TaskMonitorView", {
     
     title: 'Tasks Monitor',
     
-    layout: 'fit',
     items: [
     	{
 	    	xtype: 'tabpanel',

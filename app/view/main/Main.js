@@ -132,7 +132,8 @@ Ext.define('Kusari.view.main.Main', {
 		},
 		{
 			title: 'Infrastructure',
-			glyph: 0xf0e8
+			glyph: 0xf0e8,
+			xtype: 'infrastructureview'
 		},
 		{
 			title: 'Events',

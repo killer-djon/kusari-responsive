@@ -40,6 +40,7 @@
      *      ]
      */
     "requires": [
+    	"sencha-charts"
     ],
 
     /**
@@ -112,6 +113,24 @@
         {
             "path": "app.js",
             "bundle": true
+        },
+        {
+	        "path": "resources/javascripts/jquery-1.7.2.min.js"
+        },
+        {
+	        "path": "resources/Chart/js/highcharts.js"
+        },
+        {
+	        "path": "resources/Chart/js/highcharts-more.js"
+        },
+        {
+	        "path": "resources/Chart/js/modules/funnel.js"
+        },
+        {
+	        "path": "resources/Chart/js/modules/exporting.js"
+        },
+        {
+	        "path": "resources/Chart/js/highcharts-3d.js"
         }
     ],
 
